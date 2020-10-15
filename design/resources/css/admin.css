@@ -1,0 +1,23 @@
+@import url('login.css');
+
+.container{
+    display: flex;
+}
+.sidebar{
+    width: 23%; padding: 1%; background-color: gray;
+}
+.sidebar ul{
+    margin: 0; padding: 0;
+}
+.sidebar ul li{
+    list-style: none; margin: 2%;
+}
+.sidebar ul li a{
+    text-decoration: none; padding: 0.5% 1%; display: block; color: black;
+}
+.sidebar ul li a:hover{
+    color: lime;
+}
+.main{
+    width: 73%; padding: 1%; background-color: lightgreen;
+}

@@ -1,0 +1,7 @@
+header,footer{
+    padding: 3%; background-color: green;
+}
+section{
+    padding: 1%; background-color: lightblue;
+}
+.login{ display: flex; justify-content: center; }   
