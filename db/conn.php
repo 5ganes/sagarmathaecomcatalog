@@ -1,2 +1,2 @@
 <?php
-	$conn = new PDO('mysql:db=sagarmathaecomcatalog;host=localhost', 'root', '');
+	$conn = new PDO('mysql:dbname=sagarmathaecomcatalog;host=localhost', 'root', '');

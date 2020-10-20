@@ -1,4 +1,5 @@
 <h3>List of Categories</h3>
+<a href="add_category.php">Add New Category</a>
 <table border="2">
 	<tr>
 		<th>SN</th>
