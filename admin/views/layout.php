@@ -16,9 +16,9 @@
                 <ul>
                     <li><a href="index.php">Dashboard</a></li>
                     <li><a href="categories.php">Manage Categories</a></li>
-                    <li><a href="products">Manage Products</a></li>
-                    <li><a href="reviews">Manage Reviews</a></li>
-                    <li><a href="orders">Manaage Orders</a></li>
+                    <li><a href="products.php">Manage Products</a></li>
+                    <li><a href="reviews.php">Manage Reviews</a></li>
+                    <li><a href="orders.php">Manaage Orders</a></li>
                 </ul>
             </div>
             <div class="main">

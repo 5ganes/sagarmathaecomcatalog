@@ -1,11 +1,12 @@
 <?php
 	require '../db/conn.php';
    require 'functions.php';
+   require 'classes/DatabaseTable.php';
 
    $title = 'Manage Categories';
    
-   $categories = $conn->prepare('SELECT * FROM tbl_categories');
-   $categories->execute();
+   $cat = new DatabaseTable('tbl_categories');
+   $categories = $cat->findAll($pdo);
    $data = [
    	'categories' => $categories
    ];

@@ -13,7 +13,9 @@
 		<tr>
 			<td><?php echo $sn++; ?></td>
 			<td><?php echo $cat['name']; ?></td>
-			<td><?php echo $cat['publish']; ?></td>
+			<td>
+				<?php if($cat['publish'] == 1) echo 'Yes'; else echo 'No'; ?>
+			</td>
 			<td>
 				Edit | Delete
 			</td>
