@@ -35,11 +35,20 @@ class DatabaseTable {
 	}
 
 	function find($pdo, $field, $value) {
-		//select * from table where field = value
+		$stmt = $pdo->prepare("select * from $this->table where $field = :value");
+		$criteria = [
+			'value' => $value
+		];
+		$stmt->execute($criteria);
+		return $stmt->fetch();
 	}
 
 	function delete($pdo, $field, $value) {
-		//delete from table where field = value
+		$stmt = $pdo->prepare("delete from $this->table where $field = :value");
+		$criteria = [
+			'value' => $value
+		];
+		$stmt->execute($criteria);
 	}
 
 }

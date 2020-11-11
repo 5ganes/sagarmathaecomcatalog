@@ -17,7 +17,8 @@
 				<?php if($cat['publish'] == 1) echo 'Yes'; else echo 'No'; ?>
 			</td>
 			<td>
-				Edit | Delete
+				<a href = "edit_category.php?id=<?php echo $cat['id']; ?>">Edit</a> | 
+				<a href="categories.php?id=<?php echo $cat['id']; ?>">Delete</a>
 			</td>
 		</tr>
 	<?php }

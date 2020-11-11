@@ -3,9 +3,15 @@
    require 'functions.php';
    require 'classes/DatabaseTable.php';
 
-   $title = 'Manage Categories';
-   
    $cat = new DatabaseTable('tbl_categories');
+
+   if(isset($_GET['id'])){
+      $cat -> delete($pdo, 'id', $_GET['id']);
+      echo 'Category deleted successfully';
+   }
+
+   $title = 'Manage Categories';
+
    $categories = $cat->findAll($pdo);
    $data = [
    	'categories' => $categories
