@@ -4,10 +4,20 @@
    require 'classes/DatabaseTable.php';
 
    if(isset($_POST['save'])){
-      $cat = new DatabaseTable('tbl_categories');
-      unset($_POST['save']);
-      $cat->insert($pdo, $_POST);
-      echo 'Category Inserted';
+      // print_r($_POST); die();
+      $error = '';
+      if($_POST['name'] == ''){
+         $error = 'Enter Category Name';
+      }
+      if($error == ''){
+         $cat = new DatabaseTable('tbl_categories');
+         unset($_POST['save']);
+         $cat->insert($pdo, $_POST);
+         header('Location:categories.php?type=msg&msg=Category Insserted');
+      }
+      else{
+         header('Location:categories.php?type=err&msg='.$error);
+      }
    }
 
 

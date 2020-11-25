@@ -14,7 +14,7 @@
       $cat = new DatabaseTable('tbl_categories');
       unset($_POST['update']);
       $cat->update($pdo, $_POST, 'id');
-      header('Location:categories.php');
+      header('Location:categories.php?type=msg&msg=Category Updated');
    }
 
 

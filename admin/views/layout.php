@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="resources/css/admin.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="resources/js/common.js"></script>
     <title><?php echo $title; ?></title>
 </head>
 <body>

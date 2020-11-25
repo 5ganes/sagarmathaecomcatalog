@@ -21,3 +21,12 @@
 .main{
     width: 73%; padding: 1%; background-color: lightgreen;
 }
+.red{
+	color:red;
+}
+.msg{
+	color:green; background: white; padding: 1%; font-weight: bold;
+}
+.err{
+	color: red; background: white; padding: 1%; font-weight: bold;
+}

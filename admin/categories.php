@@ -7,7 +7,7 @@
 
    if(isset($_GET['id'])){
       $cat -> delete($pdo, 'id', $_GET['id']);
-      echo 'Category deleted successfully';
+      header('Location:categories.php?type=msg&msg=Success : Category Deleted Successfully');
    }
 
    $title = 'Manage Categories';

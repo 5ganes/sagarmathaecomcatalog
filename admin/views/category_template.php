@@ -1,3 +1,9 @@
+<?php
+	if(isset($_GET['msg'])){
+		echo '<div class="' . $_GET['type'] . '">'.$_GET['msg'].'</div>';
+	}
+?>
+
 <h3>List of Categories</h3>
 <a href="add_category.php">Add New Category</a>
 <table border="2">
@@ -18,7 +24,7 @@
 			</td>
 			<td>
 				<a href = "edit_category.php?id=<?php echo $cat['id']; ?>">Edit</a> | 
-				<a href="categories.php?id=<?php echo $cat['id']; ?>">Delete</a>
+				<a href="#" onclick="deleteRecord('categories.php?id=<?php echo $cat['id']; ?>')">Delete</a>
 			</td>
 		</tr>
 	<?php }
