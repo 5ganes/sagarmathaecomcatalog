@@ -1,8 +1,14 @@
 <?php
-    require 'functions.php';
+	require '../db/conn.php';
 
-    $title = 'Product Home';
-    $body = getTemplate('views/home.php', []);
+	if(!isset($_SESSION['sessUserId'])){
+        header('Location:login.php');
+   }
 
-    require 'views/layout.php';
+   require 'functions.php';
+
+   $title = 'Product Home';
+   $body = getTemplate('views/home.php', []);
+
+   require 'views/layout.php';
 ?>

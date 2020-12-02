@@ -1,5 +1,10 @@
 <?php
 	require '../db/conn.php';
+
+   if(!isset($_SESSION['sessUserId'])){
+        header('Location:login.php');
+   }
+
    require 'functions.php';
    require 'classes/DatabaseTable.php';
 

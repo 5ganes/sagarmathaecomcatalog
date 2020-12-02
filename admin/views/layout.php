@@ -19,7 +19,8 @@
                     <li><a href="categories.php">Manage Categories</a></li>
                     <li><a href="products.php">Manage Products</a></li>
                     <li><a href="reviews.php">Manage Reviews</a></li>
-                    <li><a href="orders.php">Manaage Orders</a></li>
+                    <li><a href="orders.php">Manage Orders</a></li>
+                    <li><a href="logout.php" style="color: red">Logout</a></li>
                 </ul>
             </div>
             <div class="main">
