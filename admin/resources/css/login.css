@@ -8,3 +8,6 @@ section{
 .text{
 	padding: 3%; margin: 1%;
 }
+.error{
+	color:red; text-align: center;
+}

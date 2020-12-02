@@ -16,6 +16,7 @@
             <div class="sidebar">
                 <ul>
                     <li><a href="index.php">Dashboard</a></li>
+                    <li><a href="users.php">Manage Users</a></li>
                     <li><a href="categories.php">Manage Categories</a></li>
                     <li><a href="products.php">Manage Products</a></li>
                     <li><a href="reviews.php">Manage Reviews</a></li>

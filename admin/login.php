@@ -18,13 +18,12 @@
                 header('Location:index.php');
             }
             else{
-                $error = 'Invalid Credentials / password';
+                $error = 'Invalid Credentials';
             }
         }
         else {
-            $error = 'Invalid Credentials / Username';
+            $error = 'Invalid Credentials';
         }
-        echo $error;
 
     }
 ?>
@@ -42,14 +41,17 @@
         Online Catalog
     </header>
     <section>
+        <?php 
+            if(!empty($error)) echo '<h3 class="error">' . $error . '</h3>'; 
+        ?>
         <h3 style="text-align: center;">Login Here</h3>
         <div class="login">
             <form action="" method="post">
                 <div>
-                    <input class="text" type="text" name="username" placeholder="Username">
+                    <input class="text" type="text" name="username" placeholder="Username" required="">
                 </div>
                 <div>
-                    <input class="text" type="password" name="password" placeholder="Password">
+                    <input class="text" type="password" name="password" placeholder="Password" required="">
                 </div>
                 <input class="text" type="submit" name="login" value="Login">
             </form>
